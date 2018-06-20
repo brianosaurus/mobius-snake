@@ -1,0 +1,200 @@
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:25:41 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 184ms
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/app_controller.rb:38:in `token'
+app/controllers/app_controller.rb:44:in `app'
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:27:10 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/app_controller.rb:38:in `token'
+app/controllers/app_controller.rb:44:in `app'
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:27:16 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 0ms
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/app_controller.rb:38:in `token'
+app/controllers/app_controller.rb:44:in `app'
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:27:17 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 0ms
+
+
+  
+JWT::DecodeError (Not enough or too many segments):
+  
+app/controllers/app_controller.rb:38:in `token'
+app/controllers/app_controller.rb:44:in `app'
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:32:07 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `public_key' for 0:Integer
+Did you mean?  public_send):
+  
+app/controllers/app_controller.rb:47:in `app'
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:34:43 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `balance' for nil:NilClass):
+  
+app/controllers/app_controller.rb:20:in `balance'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:35:45 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms)
+
+
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:38:04 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:38:28 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:43:46 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms)
+
+
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:43:54 -0700
+Processing by AppController#pay as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NoMethodError (undefined method `pay' for nil:NilClass):
+  
+app/controllers/app_controller.rb:26:in `pay'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:44:53 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:44:56 -0700
+Processing by AppController#pay as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+NoMethodError (undefined method `pay' for nil:NilClass):
+  
+app/controllers/app_controller.rb:26:in `pay'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:48:36 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms)
+
+
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:48:39 -0700
+Processing by AppController#pay as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 30ms
+
+
+  
+ActionView::MissingTemplate (Missing template app/gone, application/gone with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/brian/work/mobius-snake/app/views"
+):
+  
+app/controllers/app_controller.rb:31:in `rescue in pay'
+app/controllers/app_controller.rb:25:in `pay'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:49:58 -0700
+Processing by AppController#balance as */*
+  Parameters: {"token"=>"undefined"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms)
+
+
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:50:00 -0700
+Processing by AppController#pay as */*
+  Parameters: {"token"=>"undefined"}
+Completed 500 Internal Server Error in 31ms
+
+
+  
+ActionView::MissingTemplate (Missing template app/nothing, application/nothing with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/brian/work/mobius-snake/app/views"
+):
+  
+app/controllers/app_controller.rb:31:in `rescue in pay'
+app/controllers/app_controller.rb:25:in `pay'
+Started GET "/balance?token=undefined" for 127.0.0.1 at 2018-06-20 09:51:48 -0700
+  
+SyntaxError (/Users/brian/work/mobius-snake/app/controllers/app_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+    render :json { insufficient_funds: 0 }, sta...
+                 ^
+/Users/brian/work/mobius-snake/app/controllers/app_controller.rb:31: syntax error, unexpected ':', expecting '}'
+...   render { insufficient_funds: 0 }, status: :unprocessable_...
+...                              ^):
+  
+app/controllers/app_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+app/controllers/app_controller.rb:31: syntax error, unexpected ':', expecting '}'
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:51:53 -0700
+  
+SyntaxError (/Users/brian/work/mobius-snake/app/controllers/app_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+    render :json { insufficient_funds: 0 }, sta...
+                 ^
+/Users/brian/work/mobius-snake/app/controllers/app_controller.rb:31: syntax error, unexpected ':', expecting '}'
+...   render { insufficient_funds: 0 }, status: :unprocessable_...
+...                              ^):
+  
+app/controllers/app_controller.rb:29: syntax error, unexpected '{', expecting keyword_end
+app/controllers/app_controller.rb:31: syntax error, unexpected ':', expecting '}'
+Started POST "/pay?token=undefined" for 127.0.0.1 at 2018-06-20 09:52:28 -0700
+Processing by AppController#pay as */*
+  Parameters: {"token"=>"undefined"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms)
+
+
