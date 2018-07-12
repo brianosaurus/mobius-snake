@@ -4,7 +4,7 @@ class AuthController < ApplicationController
   # GET /auth
   # Generates and returns challenge transaction XDR signed by application to user
   def challenge
-    response.set_header('Access-Control-Allow-Origin', 'store.mobius.network')
+    response.set_header('Access-Control-Allow-Origin', 'https://store.mobius.network')
     render plain: Mobius::Client::Auth::Challenge.call(
       Rails.application.secrets.app[:secret_key], # SA2VTRSZPZ5FIC.....I4QD7LBWUUIK
       12.hours                                    # Session duration
@@ -16,7 +16,7 @@ class AuthController < ApplicationController
   #   - Signed by application and requesting user.
   #   - Not older than 10 seconds from now (see Mobius::Client.strict_interval`)
   def authenticate
-    response.set_header('Access-Control-Allow-Origin', 'store.mobius.network')
+    response.set_header('Access-Control-Allow-Origin', 'https://store.mobius.network')
     token = Mobius::Client::Auth::Token.new(
       Rails.application.secrets.app[:secret_key], # SA2VTRSZPZ5FIC.....I4QD7LBWUUIK
       params[:xdr],                               # Challenge transaction
